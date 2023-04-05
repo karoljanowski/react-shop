@@ -9,7 +9,6 @@ function Menu(){
     const options = [
         {name: 'handmade', path: '/'},
         {name: 'shop', path: '/shop'},
-        {name: 'about us', path: 'about'},
         {name: 'contact', path:'contact'}
     ]
     const elements = options.map((element, index) => {

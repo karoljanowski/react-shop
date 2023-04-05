@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import {Context} from "../components/Context";
-import trashSolid from '/trash-solid.svg'
+import trashSolid from '/icons/trash-solid.svg'
 import { Link } from "react-router-dom";
 
 function CartPage(){
@@ -36,7 +36,7 @@ function CartPage(){
                     <span>Total</span>
                     <span>{totalPrice()}$</span>
                 </div>
-                <button className="cart-page__order">Order</button>
+                <Link to={'/order'} className="cart-page__order">Order</Link>
             </div>
             </> : 
             <div className="cart-page__empty">

@@ -1,0 +1,77 @@
+.order-page {
+    & &__title {
+        font-size: 2.25rem;
+        text-transform: uppercase;
+    }
+
+    & &__form {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: inherit;
+    }
+
+    & &__input {
+        border: 1px solid $border;
+        padding: 0.5rem;
+        font-size: 1rem;
+        outline: none;
+
+    }
+
+    & &__error {
+        @extend .order-page__input;
+        border-color: red;
+    }
+
+
+
+
+    & &__button {
+        background-color: transparent;
+        border: 2px solid $border;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+
+
+
+    & &__modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: grid;
+        place-content: center;
+    }
+
+    & &__modal-content {
+        background-color: white;
+        padding: 2rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    & &__modal-btn {
+        font-family: inherit;
+        background-color: transparent;
+        border: 1px solid $border;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 0.5rem;
+    }
+
+
+
+}

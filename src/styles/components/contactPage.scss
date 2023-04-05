@@ -1,0 +1,53 @@
+.contact-page {
+    & &__title {
+        font-size: 2.25rem;
+        text-transform: uppercase;
+
+    }
+
+    & &__info {
+        display: flex;
+        font-size: 1.25rem;
+        margin: 1rem 0;
+
+        & img {
+            width: 24px;
+            margin-right: 1rem;
+        }
+    }
+
+    & &__message {
+        text-transform: uppercase;
+    }
+
+    & &__message2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+
+    & &__form {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    & &__input {
+        border: 1px solid $border;
+        padding: 0.5rem;
+        font-family: inherit;
+        outline: none;
+    }
+
+    & &__btn {
+        border: 1px solid $border;
+        font-family: inherit;
+        padding: 0.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+}

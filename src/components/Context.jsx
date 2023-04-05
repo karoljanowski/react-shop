@@ -14,8 +14,11 @@ function ContextProvider(props){
         const newItems = cart.filter((item, i) => i !== index);
         setCart(newItems);
     }
+    function clearCart(){
+        setCart([])
+    }
     return(
-        <Context.Provider value={{cart, addToCart, deleteFromCart}}>
+        <Context.Provider value={{cart, addToCart, deleteFromCart, clearCart}}>
             {props.children}
         </Context.Provider>
     )
