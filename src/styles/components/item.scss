@@ -1,0 +1,38 @@
+.item {
+    border: 1px solid $border;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    & &__img {
+        min-width: 170px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    & &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    & &__name,
+    & &__price {
+        color: black;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    & &__btn {
+        background-color: $btn-bgc;
+        border: 0;
+        padding: 0.5rem;
+        font-weight: 700;
+        font-family: inherit;
+        text-transform: uppercase;
+    }
+
+}

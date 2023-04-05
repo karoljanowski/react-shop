@@ -1,0 +1,19 @@
+@import './fonts.scss';
+@import './normalize.scss';
+@import './root.scss';
+@import './components/menu.scss';
+@import './components/content.scss';
+@import './components/mainPage.scss';
+@import './components/shopPage.scss';
+@import './components/cart.scss';
+@import './components/item.scss';
+@import './components/itemPage.scss';
+@import './components/cartPage.scss';
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.app {
+    height: 100vh;
+}

@@ -1,0 +1,29 @@
+.shop-page {
+    & &__title {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    & &__categories {
+        margin: 1rem 0;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    & &__category {
+        flex-grow: 1;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid $border;
+    }
+
+    & &__category-active {
+        @extend .shop-page__category;
+        background-color: $category-bgc;
+    }
+
+    & &__category-name {
+        font-size: 1.5rem;
+
+    }
+}
