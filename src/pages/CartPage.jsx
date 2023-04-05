@@ -23,11 +23,10 @@ function CartPage(){
         });
         return price
     }
-
     return(
         <div className="cart-page">
             <h2 className="cart-page__title">Cart.</h2>
-            {cart.lenght ? 
+            {cart.length ? 
             <>
             <div className="cart-page__items">
                 {cartElements}
@@ -42,7 +41,7 @@ function CartPage(){
             </> : 
             <div className="cart-page__empty">
                 <p>Your cart is empty</p>
-                <Link className="cart-page__link" to={'shop'}>Come back to shop</Link>
+                <Link className="cart-page__link" to={'/shop'}>Come back to shop</Link>
             </div>
             }
         </div>
