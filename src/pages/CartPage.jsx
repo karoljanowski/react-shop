@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import {Context} from "../components/Context";
 import trashSolid from '/trash-solid.svg'
+import { Link } from "react-router-dom";
 
 function CartPage(){
     const {cart, deleteFromCart} = useContext(Context)
@@ -26,16 +27,24 @@ function CartPage(){
     return(
         <div className="cart-page">
             <h2 className="cart-page__title">Cart.</h2>
+            {cart.lenght ? 
+            <>
             <div className="cart-page__items">
                 {cartElements}
             </div>
             <div className="cart-page__total">
                 <div className="cart-page__total-price">
                     <span>Total</span>
-                    <span>{totalPrice()}</span>
+                    <span>{totalPrice()}$</span>
                 </div>
                 <button className="cart-page__order">Order</button>
             </div>
+            </> : 
+            <div className="cart-page__empty">
+                <p>Your cart is empty</p>
+                <Link className="cart-page__link" to={'shop'}>Come back to shop</Link>
+            </div>
+            }
         </div>
     )
 }
