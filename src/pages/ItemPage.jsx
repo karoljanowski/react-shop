@@ -18,14 +18,16 @@ function ItemPage(){
     return(
         <div className="item-page">
             <Cart />
-            <h2 className="item-page__title">{item.title}</h2>
-            <img src={item.image} className="item-page__img" />
-            <p className="item-page__desc">{item.description}</p>
-            <span className="item-page__price">{item.price}</span>
-            <button className="item-page__btn" onClick={() => addToCart(id)}>Add to cart</button>
-            <h3 className="item-page__reviews-title">Reviews</h3>
-            <div className="item-page__reviews">
-                {reviews}
+            <div className="item-page__item">
+                <h2 className="item-page__title">{item.title}</h2>
+                <img src={item.image} className="item-page__img" />
+                <p className="item-page__desc">{item.description}</p>
+                <span className="item-page__price">{item.price}$</span>
+                <button className="item-page__btn" onClick={() => addToCart(id)}>Add to cart</button>
+                <h3 className="item-page__reviews-title">Reviews</h3>
+                <div className="item-page__reviews">
+                    {reviews}
+                </div>
             </div>
         </div>
     )

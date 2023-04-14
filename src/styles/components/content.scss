@@ -1,4 +1,13 @@
 .content {
     padding: 1rem;
+    width: 100%;
     height: calc(100% - 57px);
+    overflow: scroll;
+    max-width: 1200px;
+    margin-inline: auto;
+
+    @media screen and (min-width: 1024px) {
+        height: 100%;
+        padding: 2rem;
+    }
 }

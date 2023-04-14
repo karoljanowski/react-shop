@@ -26,4 +26,60 @@
     & &__img {
         width: 100%;
     }
+
+    @media screen and (min-width: 413px) {
+        & &__title {
+            font-size: 3rem;
+        }
+
+        & &__desc {
+            font-size: 2rem;
+        }
+
+        & &__desc2 {
+            font-size: 1.25rem;
+        }
+    }
+
+    @media screen and (min-width: 820px) {
+        & &__title {
+            font-size: 3.5rem;
+        }
+
+        & &__desc {
+            font-size: 2.5rem;
+        }
+
+        & &__desc2 {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        & &__bottom {
+            display: flex;
+            align-items: flex-end;
+            gap: 1rem;
+        }
+
+        & &__img {
+            width: 450px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        & &__title {
+            font-size: 5rem;
+        }
+
+        & &__desc2 {
+            font-size: 1.25rem;
+        }
+
+        & &__img {
+            width: 600px;
+        }
+    }
 }

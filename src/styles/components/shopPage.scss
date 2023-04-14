@@ -15,7 +15,8 @@
         padding: 0.5rem;
         background-color: transparent;
         border: 1px solid $border;
-        color: black
+        color: black;
+        font-size: inherit;
     }
 
     & &__category-active {
@@ -26,5 +27,36 @@
     & &__category-name {
         font-size: 1.5rem;
 
+    }
+
+    @media screen and (min-width: 820px) {
+        & &__products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        & &__category {
+            font-size: 1.5rem;
+        }
+
+        & &__category-name {
+            font-size: 2rem;
+
+        }
+
+        & &__products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1600px) {
+        & &__products {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }
